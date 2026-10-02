@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#1b2a55"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#sky)"/>
+  <!-- horizon and rays that converge on the vanishing point at (256, 290) -->
+  <g stroke="#7aa2ff" stroke-width="10" stroke-linecap="round" fill="none">
+    <line x1="40" y1="290" x2="472" y2="290" stroke-opacity=".55"/>
+    <line x1="256" y1="290" x2="46" y2="500"/>
+    <line x1="256" y1="290" x2="466" y2="500"/>
+    <line x1="256" y1="290" x2="186" y2="500" stroke-opacity=".55"/>
+    <line x1="256" y1="290" x2="326" y2="500" stroke-opacity=".55"/>
+  </g>
+  <!-- a box in one-point perspective: front face + top face, depth edges point at the VP -->
+  <g stroke="#ffffff" stroke-width="12" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M206 340 L221 325 H291 L306 340 Z" fill="#2c3f7a"/>
+    <rect x="206" y="340" width="100" height="100" fill="#0f1a3d"/>
+  </g>
+  <circle cx="256" cy="290" r="14" fill="#e879f9" stroke="#fff" stroke-width="6"/>
+</svg>
